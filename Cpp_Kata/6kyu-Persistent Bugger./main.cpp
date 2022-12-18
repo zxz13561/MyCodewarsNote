@@ -4,30 +4,41 @@
 
 using namespace std;
 
-int persistence(long long n){
-  cout << n << ":\n";
-  
-  stringstream temp_str;
-  temp_str << n;
-  
-  char const *n_arr = temp_str.str().c_str();
-  cout << "arr: " << n_arr << endl;
-  
-  auto len_arr = sizeof n_arr / sizeof n_arr[0];
-  cout << "arr size:" << len_arr << "\n";
-    
-  for(int i = 0; i < len_arr; i++){
-    cout << n_arr[i] << "\n";
-  }
-  cout << "End\n";
-  return 0;
+int persistence_first_try(long long n){
+    int cnt_loop = 0;
+    while (n >= 10)
+    {
+        stringstream ss;
+        ss << n;
+
+        int tmp_n = 1;
+        for(char& c: ss.str()){
+            int c_n = ((int)c - 48);
+            tmp_n = tmp_n * c_n;
+        }
+        n = tmp_n;
+        cnt_loop++;
+    }
+    return cnt_loop;
+}
+
+int persistence(long long n) {
+    long long p = 1;
+    if (n < 10){
+        return 0;
+    } 
+    while (n > 0){
+        p = (n % 10) * p; 
+        n = n/10; 
+    }
+    return persistence(p) + 1;
 }
 
 int main()
 {
-    persistence(39);
-    persistence(4);
-    persistence(25);
-    persistence(999);
-    persistence(444);     
+    cout << persistence(39) << "\n";
+    cout << persistence(4) << "\n";
+    cout << persistence(25) << "\n";
+    cout << persistence(999) << "\n";
+    cout << persistence(444) << "\n"; 
 };
