@@ -1,3 +1,4 @@
+#include "../UnitTest/unitest.hpp"
 #include <iostream>
 #include <sstream>
 #include <cmath>
@@ -15,20 +16,15 @@ bool is_even(double n)
     return fmod(n, 2) == 0;
 }
 
-void do_test(double n, bool ans){
-    cout << "\nQ: " << n << "\n";
-    string res = is_even(n) == ans ? "Pass" : "Fail";
-    cout << "Is Correct: " << res << "\n"; 
-}
-
 int main()
 {
-    do_test(0,   true);
-    do_test(0.5, false);
-    do_test(1,   false);
-    do_test(2,   true);
-    do_test(-4,  true);
-    do_test(0.88,  false);
-    do_test(1.38,  false);
-    do_test(555555555556,  true);
+    unitest t;
+    t.That(is_even(0),   t.Equals(true));
+    t.That(is_even(0.5), t.Equals(false));
+    t.That(is_even(1),   t.Equals(false));
+    t.That(is_even(2),   t.Equals(true));
+    t.That(is_even(-4),  t.Equals(true));
+    t.That(is_even(0.88),  t.Equals(false));
+    t.That(is_even(1.38),  t.Equals(false));
+    t.That(is_even(555555555556),  t.Equals(true));
 };
