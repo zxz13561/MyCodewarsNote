@@ -1,2 +1,2 @@
 # MyCodewarsNote
-My Codewars problem notes, with Python or C#
+My Codewars problem notes, with Python, C#, C/C++, Rust
