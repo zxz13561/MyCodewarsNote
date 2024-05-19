@@ -6,10 +6,20 @@
       <sourceFolder url="file://$MODULE_DIR$/test_build/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_8kyu-Grasshopper_Basic_Function_Fixer/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/_8kyu-Thinkful_Logic_Drills_Traffic_light/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_7kyu-Testing1-2-3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlayGround/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_6kyu-Good_vs_Evil/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_6kyu-IP_Validation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_7kyu-Sum_of_odd_numbers/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/_8kyu-Count_of_positives/sum_of_negatives/target" />
       <excludeFolder url="file://$MODULE_DIR$/test_build/target" />
       <excludeFolder url="file://$MODULE_DIR$/_8kyu-Grasshopper_Basic_Function_Fixer/target" />
       <excludeFolder url="file://$MODULE_DIR$/_8kyu-Thinkful_Logic_Drills_Traffic_light/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_7kyu-Testing1-2-3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/PlayGround/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_6kyu-Good_vs_Evil/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_6kyu-IP_Validation/target" />
+      <excludeFolder url="file://$MODULE_DIR$/_7kyu-Sum_of_odd_numbers/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
