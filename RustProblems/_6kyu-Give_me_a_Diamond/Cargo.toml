@@ -1,0 +1,6 @@
+[package]
+name = "_6kyu-Give_me_a_Diamond"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
